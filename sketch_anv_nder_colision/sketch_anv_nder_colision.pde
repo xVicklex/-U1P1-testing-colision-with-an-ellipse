@@ -1,10 +1,15 @@
-float speedY = 7.2;
-float speed = 5.8;
+float speedY = 4.2;
+
+float speed = 4.8;
+
 boolean isClicked = false;
+
 float x = 400;
+
 float y = 100;
 void setup()
 {
+
   background(0);
   size(800, 800);
 }
@@ -17,25 +22,29 @@ void draw()
 
   if (0>y)
   {
-    speedY = 5;
+    speedY = 3.2;
+    background(random(255), random(255), random(255));
   }
   if (y>800)
   {
-    speedY = -5;
+    speedY = -4.4;
+    background(random(255), random(255), random(255));
   }
   if (isClicked == true)
   {
     y = y + speedY;
   }
 
-
   if (0>x)
   {
-    speed = 5;
+    speed = 4.7;
+    background(random(255), random(255), random(255));
   }
   if (x>800)
   {
-    speed = -5;
+
+    speed = -6.4;
+    background(random(255), random(255), random(255));
   }
   if (isClicked == true)
   {
